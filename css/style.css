@@ -1,0 +1,107 @@
+
+		/* material icons*/
+		@font-face {
+		  font-family: 'Material Icons';
+		  font-style: normal;
+		  font-weight: 400;
+		  src: url(../fonts/material-icons.woff2) format('woff2');
+		}
+
+		.material-icons {
+		  font-family: 'Material Icons';
+		  font-weight: normal;
+		  font-style: normal;
+		  font-size: 24px;
+		  line-height: 1;
+		  letter-spacing: normal;
+		  text-transform: none;
+		  display: inline-block;
+		  white-space: nowrap;
+		  word-wrap: normal;
+		  direction: ltr;
+		  -moz-font-feature-settings: 'liga';
+		  -moz-osx-font-smoothing: grayscale;
+		}
+		/* enda material icons */
+
+		@font-face {
+		  font-family: Helvetica Neue;
+		  src: url(../fonts/HelveticaNeue.ttf) format('woff');
+		}
+
+		html {min-height: 100%;}
+		html, body, h1, h2, h3, h4, h5, h6, p { user-select: none; padding: 0; margin:0; border: 0; outline: 0; font-family: Helvetica Neue,Helvetica,Arial,sans-serif; }
+		body {background-image: linear-gradient(#34C7A0, #008AA2); padding: 10px 10px 0; }
+		h1 {font-size: 34px;}
+		p {font-size: 16px;}
+
+		#app { margin: 0 auto; }
+		
+		/** welcome header **/
+		.welcome { background: #fff;	border-radius: 28px; height: calc( 117px - 50px );	padding:25px; }
+		.welcome-title { color:#00B6A3; padding:0 0 10px; }
+		.welcome-subtitle { color:#898694; }
+
+		/** menu **/
+		.menu {margin: 10px 0;}
+		.menu-content {	width: 60px; height: 60px; text-align:center;background: #fff; border-radius: 23px;	opacity: 0.25; position:absolute; }
+		.menu-button { float:left; margin-right:23px; text-align:center; color:#fff; opacity:0.7; cursor:pointer; border-radius: 23px; }
+		.menu-button:last-of-type {margin-right:0;}
+		.menu-button-text {width:60px;position:relative; height:60px;}
+
+		/** info **/
+		.info { background: #fff; border-radius: 28px; width: calc( 100% - 20px); opacity: 0.25; position:absolute;}
+		.info-content {position:relative; padding:20px 0 0 20px; margin-bottom:35px;}
+		.info-title {color:#fff; font-size:20px;}
+		.info-subtitle {color:#fff; opacity:0.7;}
+		.info-text {padding:6px 20px 0 64px;}
+		.info-big-value {color:#fff; padding:35px 0px 18px;}
+		.info-small-value {color:#fff; float: right;}
+
+		/** icon **/
+		.icon-bg-transparent { background:#fff;	border-radius: 50px; height: 50px; width:50px; opacity: 0.25; position:absolute }
+		.icon-default {font-size:28px; color:#fff; margin:10px;}
+		.icon-circle {width:50px; height:50px; border-radius:50px; opacity:0.25; background:#00B6A3; margin:20px auto 0;}
+
+		/** header **/
+		.header { background: #fff; border-radius: 28px; height: 117px; width: calc( 100% - 20px); opacity: 0.25; position:absolute;	text-align: center;}
+		.header-bg-transaprent {position:relative;}
+		.header-arrow { line-height:117px; font-size:50px; color:#fff; float:left; cursor:pointer; }
+		.header-text {height:117px; color:#fff;}
+		.header-day {padding:20px 0px;}
+		.header-full-date {opacity:0.7;}
+
+		/** content **/
+		.content-white { min-height: calc( 100vh - 247px ); position:relative;	padding: 40px 0 0 0; border-radius: 28px 28px 0 0; background: #fff; height:auto; }
+
+		/** circle **/
+		.circle{border-radius:231px; width:231px; height:231px; border: 8px solid #00B6A3; margin: 0 auto; text-align:center;}
+		
+		/** serparators **/
+		.vertical-line { box-shadow: 0 0 1px rgba(0, 0, 0, 0.1); height:76px; width:1px; background:#EBEBEB; float:left; margin-top:-10px;}
+
+		/** footer **/
+		.footer {margin-top:50px; position:absolute; width:100%; bottom: 25px; }
+		.footer-data {width:calc( 33.33% - 1px ); text-align:center; float:left;}
+		.footer-data>h1{color:#00B6A3; font-size: 40px;}
+		.footer-data>p{color:#B3B3B3; font-size: 18px;}
+		.footer-data:last-of-type {width: 33.33%;}
+
+		@media screen and (max-width: 413px) {
+			.menu-button {margin-right: 22px;}
+
+		}
+
+		@media screen and (max-width: 410px) {
+			.menu-button {margin-right: 13px;}
+
+		}
+
+		@media only screen and (max-width: 374px) {
+			.menu-button {margin-right: 10px;}
+		}
+
+		@media only screen and (max-width: 359px) {
+			.menu-button {margin-right: 0;}
+		}
+
