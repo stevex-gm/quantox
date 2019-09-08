@@ -1,6 +1,9 @@
 let LOAD = {};
 
-LOAD.model = ['getFitnessData.js'];
+LOAD.model = [
+	'getFitnessData.js',
+	'onClickMenu.js'
+];
 
 LOAD.view = [
 	'welcome.js',
