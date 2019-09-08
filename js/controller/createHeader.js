@@ -1,6 +1,6 @@
 APP.createHeader = data=>{
 	console.log('createHeader');
-	APP.header = $lib.createObj({div:[], id:'header'}, APP.root)[0];
-	$lib.createObj(APP.view.welcome(), APP.header);
-	APP.createMenu();
+	APP.obj.header = $lib.html({div:[], id:'header'}, APP.root)[0];
+	$lib.html(APP.view.welcome(), APP.obj.header);
+	return;
 }

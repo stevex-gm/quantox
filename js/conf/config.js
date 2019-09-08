@@ -8,6 +8,6 @@ let	APP={
 		},
 		view:{},
 		model:{},
-		event:{}
+		obj:{}
 	};
 

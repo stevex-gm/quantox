@@ -1,8 +1,18 @@
-APP.start = async ()=>{
+APP.start = function(){
 	console.log('start');
 
-	if(!APP.hash) await APP.model.getFitnessData();
-	$lib.replaceObj(null, APP.root);
-	APP.createHeader();
+	let data;
 
-}
+	return  async ()=>{
+
+		if(!data) data = await APP.model.getFitnessData();
+
+		$lib.rhtml(null, APP.root);
+
+		APP.createHeader();
+		APP.createMenu(data);
+		APP.createContent(data);
+
+	};
+
+}();

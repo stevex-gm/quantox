@@ -1,6 +1,6 @@
 APP.createMenu = data=>{
 	console.log('createMenu');
-	APP.menu = $lib.createObj({div:[], id:'menu'}, APP.root)[0];
-	$lib.createObj(APP.view.menu(APP.hash), APP.menu);
-	APP.createContent();
+	APP.obj.menu = $lib.html({div:[], id:'menu'}, APP.root)[0];
+	$lib.html(APP.view.menu(data.hash), APP.obj.menu);
+	return;
 }
