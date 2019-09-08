@@ -75,9 +75,8 @@ LOAD.js = (folder, arr)=>{
 	await LOAD.js('js/controller', LOAD.controller);
 	await LOAD.js('js', LOAD.app);
 
-	let fn;
-	eval("fn = function () { " + LOAD.all + "\nreturn APP; };");
-	let app = fn();
+	let app;
+	eval("app = function () { " + LOAD.all + "\nreturn APP; }();");
 	app.start();
 
 })()
